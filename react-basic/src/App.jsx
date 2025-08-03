@@ -22,13 +22,13 @@ function getArticleJSX(type) {
     return <div>无图模式模版</div>
   } else if (type === 1) {
     return <div>单图模式模版</div>
-  } else if(type === 3)
-  {
+  } else if (type === 3) {
     return <div>三图模式模版</div>
   }
 }
 
-function App() {
+// JSX高频场景
+function App_01() {
   return (<>
     {/*<div>*/}
     {/*  <h2>JSX高频场景-JS表达式</h2>*/}
@@ -63,6 +63,25 @@ function App() {
       <h2>JSX高频场景-复杂条件渲染</h2>
       {getArticleJSX(1)}
     </div>
+  </>)
+}
+
+// React的事件绑定
+function App() {
+  /*  const clickHandler = () => {
+      console.log('clickHandler')
+    }*/
+/*  const clickHandler = (name) => {
+    console.log('clickHandler', name)
+  }
+  return (<>
+    <button onClick={() => clickHandler('Jack')}>click me</button>
+  </>)*/
+  const clickHandler = (name,e) => {
+    console.log('clickHandler', name,e)
+  }
+  return (<>
+    <button onClick={(e) => clickHandler('Jack',e)}>click me</button>
   </>)
 }
 
