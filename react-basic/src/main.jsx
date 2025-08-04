@@ -5,6 +5,6 @@ import App_02 from './App_02.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App_01/>
+    <App_02/>
   </StrictMode>,
 )
