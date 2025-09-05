@@ -2,33 +2,33 @@ import React from 'react'
 import { useImmer } from 'use-immer';
 
 // JSX高频场景-JS表达式
-const message = 'this is message'
+// const message = 'this is message'
 
-function getAge() {
-  return 18
-}
+// function getAge() {
+//   return 18
+// }
 
 // JSX高频场景-列表渲染
-const list = [
-  {id: 1001, name: 'Vue'},
-  {id: 1002, name: 'React'},
-  {id: 1003, name: 'Angular'}
-]
+// const list = [
+//   {id: 1001, name: 'Vue'},
+//   {id: 1002, name: 'React'},
+//   {id: 1003, name: 'Angular'}
+// ]
 
 // JSX高频场景-条件渲染
-const flag = true
-const loading = true
+// const flag = true
+// const loading = true
 
 // JSX高频场景-复杂条件渲染
-function getArticleJSX(type) {
-  if (type === 0) {
-    return <div>无图模式模版</div>
-  } else if (type === 1) {
-    return <div>单图模式模版</div>
-  } else if (type === 3) {
-    return <div>三图模式模版</div>
-  }
-}
+// function getArticleJSX(type) {
+//   if (type === 0) {
+//     return <div>无图模式模版</div>
+//   } else if (type === 1) {
+//     return <div>单图模式模版</div>
+//   } else if (type === 3) {
+//     return <div>三图模式模版</div>
+//   }
+// }
 
 // 一、JSX高频场景
 /*function App_01() {
@@ -90,9 +90,9 @@ function getArticleJSX(type) {
 
 
 // 定义组件
-function Button() {
-  return <button>click me</button>
-}
+// function Button() {
+//   return <button>click me</button>
+// }
 
 // 三、React组件基础使用
 /*function App_01() {
@@ -108,10 +108,10 @@ function Button() {
 
 // 四、组件状态管理-useState
 function App_01() {
-  const [count, setCount] = React.useState(0)
-  const handleClick = () => {
-    setCount(count + 1)
-  }
+  // const [count, setCount] = React.useState(0)
+  // const handleClick = () => {
+  //   setCount(count + 1)
+  // }
   const [form, setForm] = useImmer({
     name: 'Jack',
     age: 0,
