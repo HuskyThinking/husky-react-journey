@@ -65,6 +65,9 @@ function MyApp() {
       </ul>
     ));
   }
+  function isForecastExists(forecastList) {
+    return forecastList && forecastList.length > 0;
+  }
 
   return (
     <main>
@@ -73,9 +76,11 @@ function MyApp() {
           <h2>{city.country}</h2>
           <h3>{city.name}</h3>
 
-          {city.forecast && city.forecast.length
+          {/* {city.forecast && city.forecast.length
             ? renderForecastList(city.forecast)
-            : 'No forecast'}
+            : 'No forecast'} */}
+          {isForecastExists(city.forecast) && renderForecastList(city.forecast)}
+          {/* {!isForecastExists(city.forecast) && <span>No forecast</span>} */}
         </section>
       ))}
     </main>
