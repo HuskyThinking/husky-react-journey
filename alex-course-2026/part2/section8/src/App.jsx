@@ -10,7 +10,6 @@ function App() {
     isLoading,
     mutate: getAdvice,
   } = useSWR(adviceURL, fetcher);
-  const [advice, setAdvice] = useState('');
   return (
     <main>
       <h1>Advice App</h1>
